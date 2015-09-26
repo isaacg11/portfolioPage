@@ -10,3 +10,14 @@
 #magnify{
 	float: right;
 }
+#tutorialsLogo{
+	font-family: "Quicksand";
+	font-size: 40px;
+}
+#tutorialsNavBar{
+	background-color: #ED5444;
+}
+#tutorialBody{
+	background-color: #EEE6E3;
+	min-height: 100vh;
+}

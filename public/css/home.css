@@ -20,6 +20,7 @@ html, body {
 /*SIDE NAVBAR*/
 #sidebarTop{
 	min-height: 100vh;
+	background-color: #ED5444;
 }
 .my-collection {
 	position: absolute;

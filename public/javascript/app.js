@@ -4,7 +4,7 @@
 	.config(Config);
 	Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 	function Config($stateProvider, $urlRouterProvider) {
-		$stateProvider.state('home',{
+		$stateProvider.state('Home',{
 			url: '/',
 			templateUrl: 'views/home.html'
 		}).
