@@ -1,3 +1,32 @@
 #portfolioBody{
-	background-color: 'yellow';
+	min-height: 100vh;
+	background-color: #EEE6E3;
 }
+#blogdrafterPic{
+	padding-top: 10px;
+}
+.flex-container {
+	display:flex;
+	width:100%;
+	flex-wrap: wrap;
+}
+
+.flex-container-nowrap {
+	display:flex;
+	width:100%;
+}
+
+.justify-between {
+	justify-content:space-between;
+}
+
+.project-card {
+	margin:1em !important;
+}
+
+/*.project-col {
+	width:30%;
+	margin: calc(3.33% / 2);
+}*/
+
+

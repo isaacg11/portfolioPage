@@ -7,5 +7,10 @@
 
 	function portfolioController() {
 		var vm = this;
+
+		 jQuery(document).ready(function(){
+      jQuery('.slider').slider({full_width: true});
+    });
+
 	}
 })();
