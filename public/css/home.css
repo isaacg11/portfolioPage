@@ -22,6 +22,7 @@ html, body {
 	min-height: 100vh;
 	background-color: #ED5444;
 }
+
 .my-collection {
 	position: absolute;
     bottom: 0;
@@ -50,8 +51,11 @@ html, body {
 	margin-left: 90px;
 }
 #about{
-	width: 270px;
-	/*position: absolute;*/
-	background-color: #3BB3B9;
+	position: relative;
 	font-family: "Quicksand";
+	color: #666666;
+
+	/*width: 270px;*/
+	/*position: absolute;*/
+	/*background-color: #3BB3B9;
 }
