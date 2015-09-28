@@ -23,7 +23,9 @@
 .project-card {
 	margin:1em !important;
 }
-/*.components{
-	background-color: #3BB3B9;
-}*/
-
+.copyright{
+	font-size:12px;
+}
+#githubBtn{
+	color: #FFFFFF;
+}
