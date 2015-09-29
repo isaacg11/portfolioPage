@@ -18,7 +18,11 @@
 		}).
 		state('WebApp', {
 		url:'/WebApp',
-		templateUrl: 'views/webapp.html'
+		templateUrl: 'views/webApp.html'
+		}).
+		state('TutorialOne', {
+		url:'/TutorialOne',
+		templateUrl: 'views/tutorialOne.html'
 		});
 		$urlRouterProvider.otherwise('/');
 	}

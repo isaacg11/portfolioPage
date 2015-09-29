@@ -26,6 +26,8 @@
 
 .project-card {
 	margin:1em !important;
+	max-height: 608px;
+	min-height: 608px;
 }
 .copyright{
 	font-size:12px;
