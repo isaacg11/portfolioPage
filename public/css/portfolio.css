@@ -2,6 +2,9 @@
 	min-height: 100vh;
 	background-color: #EEE6E3;
 }
+.navbar{
+	background-color: #ED5444;
+}
 #blogdrafterPic{
 	padding-top: 10px;
 }
@@ -26,6 +29,8 @@
 .copyright{
 	font-size:12px;
 }
-#githubBtn{
-	color: #FFFFFF;
+#nav-mobile{
+	margin-right:30px;
+	cursor: pointer;
 }
+
