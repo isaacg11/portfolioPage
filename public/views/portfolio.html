@@ -1,18 +1,30 @@
 <div id="portfolioBody" class="flex-container" ng-controller="portfolioController as vm">
 
 <!--NAVBAR-->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a target="_blank" href="https://github.com/isaacg11">
+  Github</a></li>
+  <li class="divider"></li>
+  <li>
+  <a target="_blank" href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button">LinkedIn</a>
+  </li>
+  <li class="divider"></li>
+  <li><a target="_blank" href="https://twitter.com/Isaacgreywebdev">
+  Twitter</a>
+  </li>
+  </ul>
   <nav>
     <div class="nav-wrapper navbar">
-      <a href="#" class="brand-logo center">Portfolio</a>
+      <a id="portfolioTitle" href="#" class="brand-logo center">Portfolio</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a ui-sref="Home">
+      <li><a href="#!">
       <i class="large material-icons">view_list</i>
       </a></li>
       </ul>
-        <ul id="nav-mobile" class="right">
-        <li>
-        <i class="material-icons right">send</i>
-        </li>
+      <ul id="nav-mobile" class="right">
+      <li>
+      <a class="dropdown-button" href="#!" data-activates="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a>
+      </li>
       </ul>
     </div>
   </nav>
@@ -21,7 +33,7 @@
   <br>
 <!--REVEAL CARD START-->
   <div class="row flex-container-nowrap justify-between">
-<!--BLOG DRAFTER-->
+<!--BLOG DRAFTER CARD-->
   <div class="card col s4 project-card z-depth-4">
     <div class="card-image waves-effect waves-block waves-light">
       <img id="blogdrafterPic" class="activator" src="images/blogdrafter.jpg">
@@ -62,7 +74,7 @@
       <ul>
     </div>
   </div>
-  <!--WHEREABOUT-->
+  <!--WHEREABOUT CARD-->
     <div class="card col s4 project-card z-depth-4">
     <div class="card-image waves-effect waves-block waves-light">
       <img id="blogdrafterPic" class="activator" src="images/Whereabout.png">
@@ -111,7 +123,7 @@
       <a target="_blank" href="http://whereaboutapp.herokuapp.com/#/">Where@bout</a>
     </div>
   </div>
-    <!--LINKTEREST-->
+    <!--LINKTEREST CARD-->
     <div class="card col s4 project-card z-depth-4">
     <div class="card-image waves-effect waves-block waves-light">
       <img id="blogdrafterPic" class="activator" src="images/linkterest.png">

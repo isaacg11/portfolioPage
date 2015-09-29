@@ -4,6 +4,7 @@
 }
 .navbar{
 	background-color: #ED5444;
+	font-family: "Quicksand";
 }
 #blogdrafterPic{
 	padding-top: 10px;
@@ -33,4 +34,6 @@
 	margin-right:30px;
 	cursor: pointer;
 }
-
+#portfolioTitle{
+	font-size: 40px;
+}
