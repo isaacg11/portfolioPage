@@ -1,11 +1,32 @@
-<div ng-controller="webAppController as vm">
+<div id="webAppBody" ng-controller="webAppController as vm">
 
-<form id="test" ng-submit='vm.sendEmail()'>
+<!--NAVBAR-->
+ <nav>
+    <div id="webAppNavBar" class="nav-wrapper col s12">
+      <a id="webAppLogo" class="brand-logo center">I Need a Web App
+      </a>
+      <ul>
+        <li><a ui-sref="Home">
+        <i class="material-icons">view_list</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- <form id="test" ng-submit='vm.sendEmail()'>
 <input type="text" ng-model="vm.contactName" placeholder="Name...">
 <input type="email" ng-model="vm.email" placeholder="Email...">
 <input type="text" ng-model="vm.message" placeholder="Message...">
 <button type="submit">Send</button>
-</form>
+</form> -->
 
 
 </div>
