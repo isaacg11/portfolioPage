@@ -1,13 +1,11 @@
 <div ng-controller="webAppController as vm">
 
-  <ul class="pagination">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#TutorialOne">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-  </ul>
+<form ng-submit='vm.sendEmail()'>
+<input type="text" ng-model="vm.contactName" placeholder="Name...">
+<input type="email" ng-model="vm.email" placeholder="Email...">
+<input type="text" ng-model="vm.message" placeholder="Message...">
+<button type="submit">Send</button>
+</form>
+
 
 </div>
