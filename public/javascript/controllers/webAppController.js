@@ -17,10 +17,8 @@
 	};
 
 	$http.post('/api/Email/send', data).success(function(res){
-	console.log(res);
+	Materialize.toast('Web App request submitted!', 3000);
 	});
-
-	
 };
 	//-------------------------------------------------------------------------//
 	}
