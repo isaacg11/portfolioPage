@@ -10,9 +10,16 @@
 	font-size: 40px;
 }
 #webAppBody{
-	background-color: ##EEE6E3;
+	background-color: #EEE6E3;
 	min-height: 100vh;
 }
 .project-desc{
 	font-family: "Quicksand";
+}
+#submissionForm{
+	background-color: #FFFFFF;
+	font-family: "Quicksand";
+}
+#formHeader{
+	font-size: 30px;
 }
