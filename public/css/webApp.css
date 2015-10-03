@@ -10,6 +10,9 @@
 	font-size: 40px;
 }
 #webAppBody{
-	background-color: #C1C1C1;
+	background-color: ##EEE6E3;
 	min-height: 100vh;
+}
+.project-desc{
+	font-family: "Quicksand";
 }
