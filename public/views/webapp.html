@@ -3,7 +3,7 @@
 <!--NAVBAR-->
  <nav>
     <div id="webAppNavBar" class="nav-wrapper col s12">
-      <a id="webAppLogo" class="brand-logo center">I Need a Web App
+      <a id="webAppLogo" class="brand-logo center">Project Overview
       </a>
       <ul>
         <li><a ui-sref="Home">
@@ -15,7 +15,8 @@
 
 <!--FORM-->
   <div id="submissionForm" class="container z-depth-2">
-  <p id="formHeader" class="center">Project Overview</p>
+  <br>
+  <p id="formHeader" class="center">Contact Info</p>
   <br>
 <!--SECTION-->
 		<div class="row">
@@ -34,10 +35,14 @@
 		<div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email">
           <label for="email">Email</label>
         </div>
       	</div>
+<!--SECTION-->
+    <br>
+    <p id="formHeader" class="center">General</p>
+    <br>
 <!--SECTION-->
 		<div class="row">
         <div class="input-field col s12">
@@ -56,6 +61,16 @@
       </div>
 <!--SECTION-->
     <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">*</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">
+          Are there any example websites or apps that you like? what do you like about them?
+          </label>
+        </div>
+      </div>
+<!--SECTION-->     
+    <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">perm_contact_calendar</i>
           <input type="date" class="datepicker">
@@ -63,78 +78,71 @@
         </div>
       </div>
 <!--SECTION-->
+    <div class='row'>
+    <div class="col s6">
+    <label>
+    Will you be processing debit/credit card transactions?
+    </label>
+    <select class="browser-default">
+      <option value="" disabled selected>Select</option>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </select>
+    </div>
+    </div>
+<!--SECTION-->
+    <div class='row'>
+    <div class="col s6">
+    <label>
+    Does your company have a copyright for it's name?
+    </label>
+    <select class="browser-default">
+      <option value="" disabled selected>Select</option>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </select>
+    </div>
+    </div>
+<!--SECTION-->
+    <div class='row'>
+    <div class="col s6">
+    <label>
+    Is your company an LLC, Corporate, or Inc. company?
+    </label>
+    <select class="browser-default">
+      <option value="" disabled selected>Select</option>
+      <option value="1">LLC</option>
+      <option value="2">Corporate</option>
+      <option value="3">Inc</option>
+      <option value="3">Sole Propiertor (Individual)</option>
+
+    </select>
+    </div>
+    </div>
+
+<!--SECTION-->
     <br>
-    <p id="formHeader" class="center">Details</p>
+    <p id="formHeader" class="center">Marketing</p>
     <br>
 <!--SECTION-->
     <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">
-          1) Are there any example websites or apps that you like? what do you like about them?
-          </label>
+          <i class="material-icons prefix">*</i>
+          <input type="email">
+          <label>Do you want to incorporate ads? If yes, please describe</label>
         </div>
-      </div>
-<!--SECTION-->
-    <div class='row'>
-    <div class="col s6">
-    <label>
-    2) Will you be processing debit/credit card transactions with your web project?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
-<!--SECTION-->
-    <div class='row'>
-    <div class="col s6">
-    <label>
-    3) Do you wish to incorporate ads?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
-<!--SECTION-->
-    <div class='row'>
-    <div class="col s6">
-    <label>
-    4) Does your company have a copyright for it's name?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
-<!--SECTION-->
-    <div class='row'>
-    <div class="col s6">
-    <label>
-    5) Is your company an LLC, Corporate, or Inc. company?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
-
-
-
-
-
-<!--SECTION-->
+        </div>
+<!--SECTION--> 
+     <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">*</i>
+          <input type="email">
+          <label>Do you want to incorporate marketing emails?</label>
+        </div>
+        </div>
+<!--SECTION-->      
   <form action="#">
-    <p>4) What social media platforms do you wish to incorporate into your project?</p>
+    <p>What social media platforms do you wish to incorporate into your project?</p>
     <p>
       <input type="checkbox" id="facebook" />
       <label for="facebook">Facebook</label>
@@ -156,12 +164,19 @@
 
 
 <!--SECTION-->
-
-
- 
-
-
-
+    <br>
+    <p id="formHeader" class="center">Other</p>
+    <br>
+<!--SECTION-->
+    <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">*</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">
+          Please list any comments or questions you have regarding your web project..
+          </label>
+        </div>
+      </div>
 <!--CLOSING DIV-->
 
       </div>
