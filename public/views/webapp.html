@@ -12,6 +12,8 @@
     </div>
   </nav>
   <br>
+  <br>
+  <br>
 
 <!--FORM-->
   <form ng-submit="vm.sendEmail()">
@@ -81,49 +83,45 @@
       </div>
       <br>
 <!--SECTION-->
-    <p>Do you need to process debit/credit card transactions? (i.e Paypal)</p>
-    <form action="#">
+  <form action="#">
+    <p>Do you need to process debit/credit card transactions?</p>
     <p>
-      <input ng-model="vm.transactionsYes" class="with-gap" name="group1" type="radio" id="test1"  />
-      <label for="test1">Yes</label>
+      <input ng-model="vm.transactionsYes" type="checkbox" id="transactionsYes" />
+      <label for="transactionsYes">Yes</label>
     </p>
      <p>
-      <input ng-model="vm.transactionsNo" class="with-gap" name="group1" type="radio" id="test2"  />
-      <label for="test2">No</label>
+      <input ng-model="vm.transactionsNo" type="checkbox" id="transactionsNo" />
+      <label for="transactionsNo">No</label>
     </p>
-    </form>
+  </form>
 <!--SECTION-->
-     <p>Does your company have a copyright for it's name?</p>
-    <form action="#">
+   <form action="#">
+    <p>Does your company have a copyright for it's name?</p>
     <p>
-      <input class="with-gap" name="group1" type="radio" id="test3"  />
-      <label for="test3">Yes</label>
+      <input ng-model="vm.copyrightYes" type="checkbox" id="copyrightYes" />
+      <label for="copyrightYes">Yes</label>
     </p>
      <p>
-      <input class="with-gap" name="group1" type="radio" id="test4"  />
-      <label for="test4">No</label>
+      <input ng-model="vm.copyrightNo" type="checkbox" id="copyrightNo" />
+      <label for="copyrightNo">No</label>
     </p>
-    </form>
 <!--SECTION-->
     <p>What kind of company do you operate as?</p>
-    <form action="#">
     <p>
-      <input class="with-gap" name="group1" type="radio" id="test5"  />
-      <label for="test5">LLC</label>
+      <input ng-model="vm.LLC" type="checkbox" id="LLC" />
+      <label for="LLC">LLC</label>
     </p>
      <p>
-      <input class="with-gap" name="group1" type="radio" id="test6"  />
-      <label for="test6">Inc</label>
+      <input ng-model="vm.inc" type="checkbox" id="inc" />
+      <label for="inc">Inc</label>
     </p>
     <p>
-      <input class="with-gap" name="group1" type="radio" id="test7"  />
-      <label for="test7">Corporate</label>
+      <input ng-model="vm.corporate" type="checkbox" id="corporate" />
+      <label for="corporate">Corporate</label>
     </p>
-     <p>
-      <input class="with-gap" name="group1" type="radio" id="test8"  />
-      <label for="test8">Sole Propietorship</label>
+     <psp      <input ng-model="vm.sp" type="checkbox" id="sp" />
+      <label for="sp">Sole Propietership</label>
     </p>
-    </form>
 
 <!--SECTION-->
     <br>
