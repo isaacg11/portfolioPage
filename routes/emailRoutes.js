@@ -21,7 +21,7 @@ var mailOptions = {
     from: data.contactName, // sender address
     to: 'isaacgreydev@gmail.com', // list of receivers
     subject: 'Web App Inquiry', // Subject line
-    text: data.message, // plaintext body
+    text: data // plaintext body
 };
 
 // send mail with defined transport object

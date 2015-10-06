@@ -14,6 +14,7 @@
   <br>
 
 <!--FORM-->
+  <form ng-submit="vm.sendEmail()">
   <div id="submissionForm" class="container z-depth-2">
   <br>
   <p id="formHeader">Contact Info</p>
@@ -22,12 +23,13 @@
 		<div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
+          <input ng-model="vm.contact" id="icon_prefix" type="text" class="validate">
           <label for="icon_prefix">Name</label>
         </div>
+<!--SECTION-->
         <div class="input-field col s5">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
+          <input ng-model="vm.phone" id="icon_telephone" type="tel" class="validate">
           <label for="icon_telephone">Telephone</label>
         </div>
         </div>
@@ -35,7 +37,7 @@
 		<div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">email</i>
-          <input id="email" type="email">
+          <input ng-model="vm.email" id="email" type="email">
           <label for="email">Email</label>
         </div>
       	</div>
@@ -47,7 +49,7 @@
 		<div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">*</i>
-          <input type="email">
+          <input ng-model="vm.business" type='text'>
           <label>Business Name?</label>
         </div>
       	</div>
@@ -55,7 +57,7 @@
  		<div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">*</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <textarea ng-model="vm.desc" id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1">Please describe your web project</label>
         </div>
       </div>
@@ -63,7 +65,7 @@
     <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">*</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <textarea ng-model="vm.examples" id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1">
           Are there any example websites or apps that you like? what do you like about them?
           </label>
@@ -73,52 +75,55 @@
     <div class="row">
         <div class="input-field col s3">
           <i class="material-icons prefix">perm_contact_calendar</i>
-          <input type="date" class="datepicker">
+          <input ng-model="vm.date" type="date" class="datepicker">
           <label for="textarea1">Project Deadline</label>
         </div>
       </div>
+      <br>
 <!--SECTION-->
-    <div class='row'>
-    <div class="col s5">
-    <label>
-    Will you be processing debit/credit card transactions?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
+    <p>Do you need to process debit/credit card transactions? (i.e Paypal)</p>
+    <form action="#">
+    <p>
+      <input ng-model="vm.transactionsYes" class="with-gap" name="group1" type="radio" id="test1"  />
+      <label for="test1">Yes</label>
+    </p>
+     <p>
+      <input ng-model="vm.transactionsNo" class="with-gap" name="group1" type="radio" id="test2"  />
+      <label for="test2">No</label>
+    </p>
+    </form>
 <!--SECTION-->
-    <div class='row'>
-    <div class="col s5">
-    <label>
-    Does your company have a copyright for it's name?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">Yes</option>
-      <option value="2">No</option>
-    </select>
-    </div>
-    </div>
+     <p>Does your company have a copyright for it's name?</p>
+    <form action="#">
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Yes</label>
+    </p>
+     <p>
+      <input class="with-gap" name="group1" type="radio" id="test4"  />
+      <label for="test4">No</label>
+    </p>
+    </form>
 <!--SECTION-->
-    <div class='row'>
-    <div class="col s5">
-    <label>
-    Is your company an LLC, Corporate, or Inc. company?
-    </label>
-    <select class="browser-default">
-      <option value="" disabled selected>Select</option>
-      <option value="1">LLC</option>
-      <option value="2">Corporate</option>
-      <option value="3">Inc</option>
-      <option value="3">Sole Propiertor (Individual)</option>
-
-    </select>
-    </div>
-    </div>
+    <p>What kind of company do you operate as?</p>
+    <form action="#">
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test5"  />
+      <label for="test5">LLC</label>
+    </p>
+     <p>
+      <input class="with-gap" name="group1" type="radio" id="test6"  />
+      <label for="test6">Inc</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test7"  />
+      <label for="test7">Corporate</label>
+    </p>
+     <p>
+      <input class="with-gap" name="group1" type="radio" id="test8"  />
+      <label for="test8">Sole Propietorship</label>
+    </p>
+    </form>
 
 <!--SECTION-->
     <br>
@@ -128,7 +133,7 @@
     <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">*</i>
-          <input type="email">
+          <input ng-model="vm.ads" type="text">
           <label>Do you want to incorporate ads? If yes, please describe</label>
         </div>
         </div>
@@ -136,7 +141,7 @@
      <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">*</i>
-          <input type="email">
+          <input ng-model="vm.marketEmail" type="text">
           <label>Do you want to incorporate marketing emails?</label>
         </div>
         </div>
@@ -144,19 +149,19 @@
   <form action="#">
     <p>What social media platforms do you wish to incorporate into your project?</p>
     <p>
-      <input type="checkbox" id="facebook" />
+      <input ng-model="vm.facebook" type="checkbox" id="facebook" />
       <label for="facebook">Facebook</label>
     </p>
      <p>
-      <input type="checkbox" id="twitter" />
+      <input ng-model="vm.twitter" type="checkbox" id="twitter" />
       <label for="twitter">Twitter</label>
     </p>
      <p>
-      <input type="checkbox" id="instagram" />
+      <input ng-model="vm.instagram" type="checkbox" id="instagram" />
       <label for="instagram">Instagram</label>
     </p>
      <p>
-      <input type="checkbox" id="linkedin" />
+      <input ng-model="vm.linkedin"type="checkbox" id="linkedin" />
       <label for="linkedin">LinkedIn</label>
     </p>
     
@@ -171,7 +176,7 @@
     <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">*</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <textarea ng-model="vm.comments" id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1">
           Please list any comments or questions you have regarding your web project..
           </label>
@@ -189,6 +194,7 @@
 <!--CLOSING DIV-->
 
       </div>
+      </form>
       </div>
 
 
