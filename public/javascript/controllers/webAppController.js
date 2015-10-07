@@ -50,7 +50,7 @@
 
 
 	var data = {
-		name: vm.contact,
+		name: vm.contact, 
 		phone: vm.phone,
 		email: vm.email,
 		business: vm.business,
