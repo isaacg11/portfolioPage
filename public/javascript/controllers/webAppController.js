@@ -7,6 +7,8 @@
 
 	function webAppController(emailFactory, $http) {
 		var vm = this;
+
+		
 	//-------------------------------------------------------------------------//
 	
 
@@ -74,21 +76,35 @@
 		comments: vm.comments
 	};
 
-	console.log(data);
 
 	$http.post('/api/Email/send', data).success(function(res){
-	Materialize.toast('Web App request submitted!', 3000);
+	vm.contact = "";
+	vm.phone = "";
+	vm.email = "";
+	vm.business = "";
+	vm.desc = "";
+	vm.examples = "";
+	vm.date = "";
+	vm.transactionsYes = "";
+	vm.transactionsNo = "";
+	vm.copyrightYes = "";
+	vm.copyrightNo = "";
+	vm.LLC = "";
+	vm.corporate = "";
+	vm.inc = "";
+	vm.sp = "";
+	vm.ads = "";
+	vm.marketEmail = "";
+	vm.facebook = "";
+	vm.twitter = "";
+	vm.instagram = "";
+	vm.linkedin = "";
+	vm.comments = "";
+
+	Materialize.toast('Web App request submitted, you will be contacted soon!', 3000);
 	});
 };
-	//-------------------------------------------------------------------------//
-  $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
-
-
-
-
+	
 
 	//-------------------------------------------------------------------------//
 	}

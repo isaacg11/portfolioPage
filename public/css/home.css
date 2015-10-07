@@ -70,5 +70,9 @@ html, body {
     border-radius: 0;
     border: none;
 }
-
-
+#baseButton{
+	background-color: #ED5444;
+}
+.btn-floating{
+	background-color: #FFFFFF;
+}
