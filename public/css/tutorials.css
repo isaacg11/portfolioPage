@@ -40,4 +40,8 @@
 .pageTab{
 	background-color: #ABC9CA;
 }
+#youtube{
+	padding-right: 20px;
+	cursor: pointer;
+}
 
